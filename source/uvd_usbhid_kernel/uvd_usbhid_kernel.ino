@@ -20,7 +20,7 @@ void get_input() {
            DigiUSB.print("veryhigh"); 
         }
         else if(analogValue > 240){     
-           DigiUSB.print("moderate"); 
+           DigiUSB.print("extreme"); 
         }         
         DigiUSB.print("\" , \"real_data\":\"");
         DigiUSB.print(analogValue,DEC);
