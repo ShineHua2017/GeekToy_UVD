@@ -6,7 +6,7 @@ void get_input() {
     if (DigiUSB.available()) {
       int usb_read = DigiUSB.read();
       if (usb_read == 'g') {
-        DigiUSB.print("{ \"exposure_level\":\""); 
+        DigiUSB.print("{\"exposure_level\":\""); 
         if(analogValue < 83){
            DigiUSB.print("low"); 
         }
@@ -22,9 +22,9 @@ void get_input() {
         else if(analogValue > 240){     
            DigiUSB.print("extreme"); 
         }         
-        DigiUSB.print("\" , \"real_data\":\"");
+        DigiUSB.print("\",\"real_data\":");
         DigiUSB.print(analogValue,DEC);
-        DigiUSB.println("\" }");        
+        DigiUSB.println("}");        
         break;  
       }
       else{ 
