@@ -20,7 +20,7 @@ void get_input() {
            SerialUSB.print("veryhigh"); 
         }
         else if(analogValue > 240){     
-           SerialUSB.print("moderate"); 
+           SerialUSB.print("extreme"); 
         }    
         SerialUSB.print("\" ,\"real_data\":");
         SerialUSB.print(analogValue,DEC);
